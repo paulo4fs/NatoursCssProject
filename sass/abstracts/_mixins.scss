@@ -52,6 +52,13 @@ ORDER: Base + typography > general layout + grid > page layout > components
     }
   }
 
+  @if $breakpoint == small-desktop {
+    @media (max-width: 95em) {
+      //1500px/16px =~ 95em;
+      @content;
+    }
+  }
+
   @if $breakpoint == big-desktop {
     @media (min-width: 112.5em) {
       //1800px/16px = 112.5em
