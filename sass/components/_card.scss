@@ -13,6 +13,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 3px;
     overflow: hidden;
@@ -179,7 +180,8 @@
     font-weight: 200;
   }
 
-  @include respond(tab-port) {
+  // @include respond(tab-port) {
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     height: auto;
     border-radius: 3px;
     background-color: $color-white;
@@ -200,10 +202,9 @@
       transform: rotateY(0deg);
     }
 
-    &__details{
+    &__details {
       padding: 1rem 3rem;
     }
-    
 
     //FRONT SIDE STYLING
     &__cta {
@@ -220,7 +221,7 @@
     }
 
     &__price-value {
-      font-size:5rem;
+      font-size: 5rem;
     }
   }
 }
