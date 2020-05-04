@@ -81,7 +81,7 @@
       105deg,
       rgba($color-white, 0.9) 0%,
       rgba($color-white, 0.9) 50%,
-      transparent 51%
+      transparent 55%
     ),
     url(../img/nat-10-small.jpg);
   background-size: 100%;
@@ -94,9 +94,9 @@
   @media (min-resolution: 192dpi) and (min-width: 32.5em), (min-width: 125em) {
     background-image: linear-gradient(
       105deg,
-      rgba($color-grey-dark, 0.9) 0%,
-      rgba($color-grey-dark, 0.9) 50%,
-      transparent 51%
+      rgba($color-white, 0.9) 0%,
+      rgba($color-white, 0.9) 50%,
+      transparent 55%
     ),
     url(../img/nat-10.jpg);
   }
@@ -106,7 +106,7 @@
         105deg,
         rgba($color-white, 0.9) 0%,
         rgba($color-white, 0.9) 70%,
-        transparent 70%
+        transparent 75%
       ),
       url(../img/nat-10.jpg);
     background-size: cover;
